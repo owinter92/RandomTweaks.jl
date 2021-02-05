@@ -18,7 +18,7 @@ Calculates the length of the curve given by `f`, where `f` is function of one pa
 """
 function curve_length(f::Function,a::Real,b::Real;rtol=1e-13)
     df = x -> ForwardDiff.derivative(f,x)
-    dr = x -> sqrt(1+df(x)*df(x))
-    l = quadgk(dr,a,b,rtol=rtol)
+    dr = x -> sqrt(1+df(x)^2)
+    l,_ = quadgk(dr,a,b,rtol=rtol)
     return l
 end

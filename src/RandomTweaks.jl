@@ -1,5 +1,6 @@
 module RandomTweaks
 
+using ForwardDiff
 using QuadGK
 
 include("load.jl")
