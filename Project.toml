@@ -1,7 +1,7 @@
 name = "RandomTweaks"
 uuid = "97e8ad84-0770-496d-b901-33f7e6c3230c"
 authors = ["Ondrej Winter <ondrej.winter@fs.cvut.cz> and contributors"]
-version = "0.1.0"
+version = "0.1.1"
 
 [compat]
 julia = "1.5"
