@@ -10,6 +10,9 @@ Load and return the content of the text file `filename` in `Array{SubString{Stri
 - `Error`: in the case of file does not exist.
 """
 function load_file_line_by_line(filename::AbstractString)
+    if !isfile(filename)
+        error("File $(filename) does not exist.") 
+    end
     f=open(filename) do file
         read(file,String)
     end

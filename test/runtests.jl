@@ -1,6 +1,5 @@
 using RandomTweaks
 using Test
 
-@testset "RandomTweaks.jl" begin
-    # Write your tests here.
-end
+@info "Testing Tweaks"
+include("load_test.jl")
